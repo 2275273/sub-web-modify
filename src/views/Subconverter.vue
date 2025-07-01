@@ -338,6 +338,8 @@ export default {
           "suo.yt": "https://suo.yt/short",
         },
         customBackend: {
+          "巴莫自用增强后端": "https://subsub.239000.xyz",
+          "巴莫备用后端": "https://zhuanhuan.239000.xyz",
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
@@ -347,6 +349,8 @@ export default {
           "sub-web作者提供": "https://api.wcc.best",
         },
         backendOptions: [
+          { value: "https://subsub.239000.xyz" },
+          { value: "https://zhuanhuan.239000.xyz/sub?" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
           { value: "https://url.v1.mk" },
@@ -356,6 +360,19 @@ export default {
           { value: "https://api.wcc.best" },
         ],
         remoteConfig: [
+          {
+            label: "巴莫自用规则",
+            options: [
+              {
+                label: "大全版本自用规则--非本人不适用，不要选",
+                value: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini"
+              },
+              {
+                label: "防泄露版本自用规则--非本人不适用，不要选",
+                value: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_DNS.ini"
+              }
+            ]
+          },
           {
             label: "CM规则",
             options: [
@@ -786,9 +803,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://subsub.239000.xyz" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
+        remoteConfig: "https://raw.githubusercontent.com/2275273/subconverter/main/rule_by_myself.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -799,7 +816,7 @@ export default {
         nodeList: false,
         extraset: false,
         tls13: false,
-        udp: false,
+        udp: ture,
         xudp: false,
         tfo: false,
         sort: false,
