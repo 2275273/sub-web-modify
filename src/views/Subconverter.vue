@@ -1327,3 +1327,11 @@ export default {
   }
 };
 </script>
+<style scoped>
+.el-container,
+.el-main {
+  background-color: white !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+</style>
