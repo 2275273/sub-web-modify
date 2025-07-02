@@ -7,12 +7,6 @@
             <svg-icon class="gayhub" icon-class="github" style="float:left" @click="goToProject" />
             <svg-icon class="dianbao" icon-class="telegram" style="float:left;margin-left: 10px"
               @click="gotoTgChannel" />
-            <!--
-              <svg-icon class="bilibili" icon-class="bilibili" style="float:right;margin-left:10px"
-              @click="gotoBiliBili" /> -->
-            <svg-icon class="youguan" icon-class="youtube" style="float:right;margin-left:10px" @click="gotoYouTuBe" />
-            <svg-icon class="channel" icon-class="telegram" style="float:right;margin-left: 10px"
-              @click="gotoTgChannel" />
             <div style="text-align:center;font-size:15px">订 阅 转 换</div>
           </div>
           <el-container>
@@ -184,11 +178,6 @@
                 </el-button>
                 <el-button style="width: 120px" type="primary" @click="dialogLoadConfigVisible = true"
                   icon="el-icon-copy-document" :loading="loading3">从URL解析
-                </el-button>
-              </el-form-item>
-              <el-form-item label-width="0px" style="text-align: center">
-                <el-button style="width: 250px;" type="success" icon="el-icon-video-play"
-                  @click="centerDialogVisible = true">视频教程
                 </el-button>
               </el-form-item>
             </el-form>
@@ -1327,11 +1316,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.el-container,
-.el-main {
-  background-color: white !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-</style>
