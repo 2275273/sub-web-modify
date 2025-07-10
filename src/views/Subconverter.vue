@@ -363,6 +363,15 @@ export default {
             ]
           },
           {
+            label: "跨境默认规则",
+            options: [
+              {
+                label: "防DNS默认规则",
+                value: "https://raw.githubusercontent.com/2275273/subconverter/refs/heads/main/rule_for_DNS_money.ini"
+              },
+            ]
+          },
+          {
             label: "CM规则",
             options: [
               {
